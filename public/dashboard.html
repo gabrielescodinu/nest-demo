@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <h1>Welcome to the Dashboard</h1>
+
+    <script>
+        const token = localStorage.getItem('access_token');
+        if (!token) {
+            alert('You must be logged in to access the dashboard');
+            window.location.href = '/login.html';
+        } else {
+            // Qui puoi utilizzare il token di accesso per richiedere dati protetti dal tuo server Nest.js
+            // Ad esempio, puoi chiamare un endpoint per ottenere i dati della dashboard
+        }
+    </script>
+</body>
+
+</html>
